@@ -1,0 +1,127 @@
+.company-address {
+    @apply flex flex-col gap-y-7 font-Rubik;
+    @apply md:max-w-[335px];
+}
+
+.company-address p {
+    @apply font-normal text-sm text-[#757575];
+}
+
+.company-address img {
+    @apply max-w-[120px];
+}
+
+/* company adress icons */
+.icon-container {
+    @apply flex gap-x-2;
+}
+
+.company-address .icon {
+    @apply p-3 w-max block bg-[#FFFFFF] rounded-[100%];
+    @apply transition-all duration-300;
+}
+
+.company-address .icon-hover:hover {
+    @apply bg-green-100;
+}
+
+.company-address .icon-mail {
+    @apply h-[25px] aspect-square block bg-cover bg-center;
+    @apply bg-[url(../../assets/icons/footer/mail.svg)];
+}
+
+.company-address .icon-mail:hover {
+    @apply bg-[url(../../assets/icons/footer/mail-light.svg)];
+}
+
+.company-address .icon-phone {
+    @apply h-[25px] aspect-square block bg-cover bg-center;
+    @apply bg-[url(../../assets/icons/footer/phone.svg)];
+}
+
+.company-address .icon-phone:hover {
+    @apply bg-[url(../../assets/icons/footer/phone-light.svg)];
+}
+
+.company-address .icon-instagram {
+    @apply h-[25px] aspect-square block bg-cover bg-center;
+    @apply bg-[url(../../assets/icons/footer/instagram.svg)];
+}
+
+.company-address .icon-instagram:hover {
+    @apply bg-[url(../../assets/icons/footer/instagram-light.svg)];
+}
+
+/* link container */
+.link-container {
+    @apply grid grid-cols-[repeat(auto-fit,_minmax(150px,_1fr))];
+    @apply font-Rubik;
+    @apply md:flex md:justify-between md:max-w-[300px] md:w-full;
+}
+
+.link-container article {
+    @apply flex flex-col gap-y-5;
+}
+
+.footer-heading {
+    @apply font-Rubik font-medium text-lg text-[#333333];
+}
+
+.link {
+    @apply flex flex-col gap-y-4;
+    @apply font-normal text-sm text-[#757575];
+}
+
+/* newletter */
+.newsletter {
+    @apply flex flex-col gap-y-4;
+}
+
+.newsletter header {
+    @apply flex flex-col gap-y-4;
+}
+
+.newsletter p {
+    @apply font-normal text-sm text-[#757575];
+}
+
+.submit-form {
+    @apply flex items-center;
+}
+
+.form {
+    @apply py-[5px] px-[10px] bg-green-500; 
+    @apply border-2 border-[#464646] border-r-0 rounded-tl-lg rounded-bl-lg;
+}
+
+.form input {
+    @apply outline-none bg-green-500 font-Rubik font-normal;
+}
+
+.send {
+    @apply p-[9px] w-[80px] font-Rubik font-medium text-sm;
+    @apply bg-green-100 text-[#FFFFFF];
+    @apply rounded-tr-[10px] rounded-br-[10px];
+}
+
+.send:active {
+    @apply bg-[#6e8a2e];
+}
+
+.newsletter .icon-container {
+    @apply flex flex-col gap-y-2;
+}
+
+.newsletter .icon {
+    @apply font-Rubik font-normal text-sm text-[#383838];
+    @apply flex items-center gap-x-3;
+}
+
+.newsletter .icon img {
+    @apply w-[30px];
+}
+
+/* responsive */
+.footer-container {
+    @apply md:grid md:grid-cols-[repeat(auto-fit,_minmax(300px,_1fr))] gap-5;
+}

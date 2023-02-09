@@ -1,0 +1,127 @@
+.browse-heading {
+    @apply font-Rubik font-medium text-2xl;
+}
+
+.browse-heading h1:first-child {
+    @apply text-[#333333];
+}
+
+.browse-heading h1:last-child {
+    @apply text-green-100;
+}
+
+/* category */
+.category-container {
+    @apply grid gap-x-[10px] grid-flow-col grid-cols-[repeat(auto-fit,_minmax(230px,_1fr))];
+    @apply py-5 overflow-scroll;
+}
+
+.category-food {
+    @apply flex flex-col items-center justify-center gap-y-5;
+    @apply h-[170px] w-[230px] rounded-lg;
+    @apply transition-[scale_ease-in-out_300ms];
+}
+
+.category-food img {
+    @apply w-[50px];
+}
+
+.category-food header {
+    @apply font-Rubik text-[#333333] text-center;
+    @apply flex flex-col gap-y-[5px];
+}
+
+.category-food header h2 {
+    @apply font-medium text-base;
+}
+
+.category-food header h3 {
+    @apply font-normal text-sm;
+}
+
+/* category food child */
+.category-food-hovered:hover {
+    @apply scale-[1.1];
+}
+
+.category-food:nth-child(1) {
+    @apply bg-green-500;
+}
+
+.category-food:nth-child(2) {
+    @apply bg-blue-stabilo-200;
+}
+
+.category-food:nth-child(3) {
+    @apply bg-blue-200;
+}
+
+.category-food:nth-child(4) {
+    @apply bg-red-200;
+}
+
+.category-food:nth-child(5) {
+    @apply bg-green-300;
+}
+
+
+/* trending */
+.trending-category {
+    @apply grid gap-5 grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))];
+}
+
+.trending-food {
+    @apply py-6 px-5 h-[290px] w-full flex flex-col gap-y-5;
+    @apply rounded-lg overflow-hidden bg-cover bg-center;
+    @apply font-Rubik font-medium;
+}
+
+.food-hovered:hover {
+    @apply bg-[url("../../assets/images/background-foods.png")];
+}
+
+.trending-food-image {
+    @apply h-[120px] w-[120px] aspect-square object-cover rounded-[6px];
+}
+
+.trending-food header h2 {
+    @apply text-[26px];
+}
+
+.trending-food header h2 {
+    @apply text-[26px] text-[#333333];
+}
+
+.trending-food header h3 {
+    @apply text-lg text-green-100;
+}
+
+/* food category */
+.pizza-category {
+    @apply bg-blue-stabilo-200;
+}
+
+.kebab-category {
+    @apply bg-blue-200;
+}
+
+.salmon-category {
+    @apply bg-red-200;
+}
+
+.donut-category {
+    @apply bg-green-300;
+}
+
+.cupcake-category {
+    @apply bg-green-500;
+}
+
+/* control container */
+.control-container {
+    @apply flex gap-x-3 justify-end;
+}
+
+.all-receipts {
+    @apply mx-auto;
+}

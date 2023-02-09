@@ -1,0 +1,57 @@
+@tailwind base;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    @apply w-[100vw] py-5 px-6 grid gap-y-8;
+    @apply md:px-12;
+}
+
+/* compnoents */
+.btn {
+    @apply py-[10px] px-[18px] h-[42px] min-w-[110px] max-w-[max-content];
+    @apply font-Rubik font-medium text-sm;
+    @apply rounded-[100px] shadow-default;
+    @apply transition-colors duration-300;
+}
+
+.btn-control {
+    @apply h-[50px] bg-green-100 text-[#FFFFFF];
+    @apply flex justify-between items-center;
+}
+
+.btn-control span {
+    @apply block p-[6px] bg-[#FFFFFF] rounded-[100%];
+}
+
+.btn-control:hover {
+    @apply bg-[#728b37];
+}
+
+.btn-control:active {
+    @apply bg-green-100;
+}
+
+.btn-control span {
+    @apply block;
+}
+
+.btn-primary {
+    @apply bg-green-100 text-[#FFFFFF];
+}
+
+.btn-secondary {
+    @apply bg-[#F2F2F2] text-[#333333];
+}
+
+.btn-primary:active {
+    @apply bg-[#718c33];
+}
+
+.btn-secondary:active {
+    @apply bg-[#d6d6d6];
+}
