@@ -77,21 +77,6 @@ function Category() {
         </>
     );
 
-    // function ButtonPrev() {
-    //     function prevHandler(event) {
-    //         console.debug(event)
-    //     }
-    
-    //     return (
-    //         <button className={`btn btn-control btn-prev`}
-    //                 onClick={prevHandler}>
-    //             <span>
-    //                 <img src={prev} alt={`icon prev`} />
-    //             </span>
-    //             <h1>Prev</h1>
-    //         </button>
-    //     );
-    // }
 }
 
 function Trending() {

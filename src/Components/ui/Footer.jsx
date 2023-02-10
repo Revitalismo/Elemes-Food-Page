@@ -24,16 +24,18 @@ function CompanyAddress() {
         </section>
     );
 
-    function Icons({icon}) {
-        return (
-            <>
-            <span className={`icon icon-hover`}>
-                <span className={`icon-${icon}`} />
-            </span>
-            </>
-        );
-    }
 }
+
+function Icons({icon}) {
+    return (
+        <>
+        <span className={`icon icon-hover`}>
+            <span className={`icon-${icon}`} />
+        </span>
+        </>
+    );
+}
+
 
 function Links() {
     return (
